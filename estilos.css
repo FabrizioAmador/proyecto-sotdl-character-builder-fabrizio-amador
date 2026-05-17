@@ -8,15 +8,6 @@
     background-color: rgba(rgb(0, 0, 0), 0);
 }
 
-.logo{
-    width: 1.5em;
-    height: 1em;
-}
-
-header{
-    color:rgb(0, 0, 0)
-}
-
 body{
     text-align: center;
     color: black;
@@ -24,18 +15,29 @@ body{
     background-repeat: no-repeat;
 }
 
+.logo{
+    width: 1.5em;
+    height: 1em;
+}
+
+.texto__sobre__imagen__fondo{
+    background-color: rgba(rgb(0, 0, 0), 0.75);
+}
+
+
 ul{
     list-style: none;
 }
 
-.boton{
+button{
     background-color: black;
-    
+    cursor: pointer;
+    margin: 0.5em;
 }
 
 footer{
     text-align: center;
     color:aliceblue;
     background-color: black;
-    text-
+    font-size: 0.75em;
 }
