@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Times New Roman, Courier;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(rgb(0, 0, 0), 0);
+}
+
+.logo{
+    width: 1.5em;
+    height: 1em;
+}
+
+header{
+    color:rgb(0, 0, 0)
+}
+
+body{
+    text-align: center;
+    color: black;
+    background-image: url('imagenes/WizardTower.jpg');
+    background-repeat: no-repeat;
+}
+
+ul{
+    list-style: none;
+}
+
+.boton{
+    background-color: black;
+    
+}
+
+footer{
+    text-align: center;
+    color:aliceblue;
+    background-color: black;
+    text-
+}
