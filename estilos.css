@@ -5,7 +5,6 @@
     font-family: Arial, Times New Roman, Courier;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    background-color: rgba(rgb(0, 0, 0), 0);
 }
 
 body{
@@ -20,10 +19,15 @@ body{
     height: 1em;
 }
 
-.texto__sobre__imagen__fondo{
-    background-color: rgba(rgb(0, 0, 0), 0.75);
+.bienvenida{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
 }
 
+.texto__sobre__imagen__fondo{
+    text-align: right;
+}
 
 ul{
     list-style: none;
