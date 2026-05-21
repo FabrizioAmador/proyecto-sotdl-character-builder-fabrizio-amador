@@ -12,22 +12,46 @@ body{
     color: black;
     background-image: url('imagenes/WizardTower.jpg');
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr 1fr 10fr 0.5fr;
 }
+
+header{
+    background-color:black;
+    padding: 1em;
+}
+
+main{
+    grid-template-columns: auto;
+}
+
+.barra__navegación{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+}
+
 
 .logo{
     width: 1.5em;
     height: 1em;
 }
 
-.bienvenida{
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
+.media__logo{
+    height: 1em;
+    width: 1em;
 }
 
-.texto__sobre__imagen__fondo{
-    text-align: right;
+.bienvenida{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-rows: 3fr 5fr 1fr;
+    gap: 1em;
+    padding: 1em;
+    align-items:last baseline
 }
+
 
 ul{
     list-style: none;
@@ -44,4 +68,6 @@ footer{
     color:aliceblue;
     background-color: black;
     font-size: 0.75em;
+    padding: 1em;
 }
+
