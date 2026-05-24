@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html language = "es">
+<html language="es">
+
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content="width=device-width, initial scale 1.0">
-    <title>SotDL Character Builder</title>
-    <link rel="stylesheet" href="..\estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="icon" type="image/x-icon" href="..\imagenes\logo.png">
+    <link rel="stylesheet" href="..\estilos\estilosmain.css">
 </head>
+
 <body>
-    <form action="https://formspree.io/f/xvzykqdd" method="POST">
-        <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required><br>
-        <label for="correo">Correo:</label> <input type="email" id="correo" name="correo" required><br>
-        <label for="consulta">Consulta:</label> <input type="textarea" id="consulta" name="consulta" required>
-        <button type="submit" class="boton">Enviar</button>
-    </form>
+    <header>
+        <h1><img class="logo" src="..\imagenes\logo.png" alt="Logo de SotDL">Character Builder</h1>
+        <nav>
+            <ul class="barra__navegación">
+                <li><a href="#">Página Principal</a></li>
+                <li><a href="#">Personajes</a></li>
+                <li><a href=".\contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>¿Tenés consultas? Mandanos tu consulta a través de este formulario.</h2>
+        </section>
+        <div>
+            <form class="consulta__form" action="https://formspree.io/f/xvzykqdd" method="POST">
+                <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required><br>
+                <label for="correo">Correo:</label> <input type="email" id="correo" name="correo" required><br>
+                <label for="consulta">Consulta:</label> <input type="textarea" id="consulta" name="consulta" required>
+                <button type="submit" class="boton">Enviar</button>
+        </div>
+        </form>
+        <footer>
+            <p>©Shadow of the Demon Lord es propiedad de Schwalb Entertainment.</p>
+        </footer>
+    </main>
 </body>
+
 </html>

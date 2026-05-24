@@ -1,0 +1,8 @@
+/* Cuerpo principal */
+
+main {
+    grid-template-columns: auto;
+    background-image: url('../imagenes/WizardTower.jpg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.75)
+}

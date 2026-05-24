@@ -1,0 +1,30 @@
+/* Cabeza de Página */
+
+header {
+    display: grid;
+    gap: .70em;
+    background-color: black;
+}
+
+/* Barra de navegación */
+.barra__navegación {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra__navegación li {
+    flex-grow: 1;
+    text-align: center;
+    align-content: center;
+    padding: 1em;
+}
+
+.barra__navegación li:hover {
+    text-decoration-line: underline;
+    background-color:  rgb(25, 25, 26);
+}
+

@@ -1,0 +1,68 @@
+/* Pagina raiz. Importa: */
+/*Estilos en el Main (dentro del Body)*/
+@import url(main.css);
+/*Header y barra de navegación*/
+@import url(header__y__nav.css);
+/*Formulario*/
+@import url(formulario__contacto.css);
+/*Main dentro de Body*/
+@import url(main.css);
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Times New Roman, Courier;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 11fr auto;
+}
+
+
+
+.logo {
+    width: 1.5em;
+    height: 1em;
+}
+
+.media__logo {
+    height: 1em;
+    width: 1em;
+}
+
+.bienvenida {
+    display: grid;
+    grid-template-rows: 3fr 5fr 1fr;
+    gap: 1em;
+    padding: 1em;
+    align-items: baseline;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: black;
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+/* Pie de página */
+
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    font-size: 0.75em;
+    padding: 1em;
+}
+
