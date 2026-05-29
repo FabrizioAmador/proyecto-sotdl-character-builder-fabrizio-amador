@@ -4,6 +4,7 @@ header {
     display: grid;
     gap: .70em;
     background-color: black;
+    padding: 1em;
 }
 
 /* Barra de navegación */

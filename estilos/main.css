@@ -1,8 +1,31 @@
 /* Cuerpo principal */
 
 main {
-    grid-template-columns: auto;
     background-image: url('../imagenes/WizardTower.jpg');
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.75)
+    display:grid;
+}
+
+.texto__sobre__fondo {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 1em;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+button {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 0.5em;
+    padding: 0.35em;
+    max-width: fit-content;
+    
+}
+
+button:hover{
+    background-color:  rgb(15, 15, 15);
+
 }
