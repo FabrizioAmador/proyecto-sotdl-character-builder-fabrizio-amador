@@ -21,21 +21,19 @@
         </nav>
     </header>
     <main>
-        <section>
+        <div class="texto__sobre__fondo">
             <h2>¿Tenés consultas? Mandanos tu consulta a través de este formulario.</h2>
-        </section>
-        <div>
             <form class="consulta__form" action="https://formspree.io/f/xvzykqdd" method="POST">
-                <label for="nombre">Nombre:</label> <input type="text" id="nombre" name="nombre" required><br>
-                <label for="correo">Correo:</label> <input type="email" id="correo" name="correo" required><br>
+                <label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo:</label> <input type="email" id="correo" name="correo" required>
                 <label for="consulta">Consulta:</label> <input type="textarea" id="consulta" name="consulta" required>
-                <button type="submit" class="boton">Enviar</button>
+                <div><button type="submit" class="boton">Enviar</button></div>          
         </div>
         </form>
-        <footer>
+    </main>
+            <footer>
             <p>©Shadow of the Demon Lord es propiedad de Schwalb Entertainment.</p>
         </footer>
-    </main>
 </body>
 
 </html>

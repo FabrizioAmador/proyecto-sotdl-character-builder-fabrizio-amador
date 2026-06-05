@@ -2,13 +2,13 @@
 
 main {
     background-image: url('../imagenes/WizardTower.jpg');
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    background-size: cover;
     display:grid;
 }
 
 .texto__sobre__fondo {
     display: grid;
-    grid-template-rows: auto auto auto;
     gap: 1em;
     padding: 1em;
     align-items: center;

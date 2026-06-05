@@ -1,0 +1,10 @@
+/*Main dentro de Body*/
+@import url(main.css);
+form{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

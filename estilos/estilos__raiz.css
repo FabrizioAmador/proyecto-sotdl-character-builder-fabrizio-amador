@@ -7,7 +7,8 @@
 @import url(formulario__contacto.css);
 /*Main dentro de Body*/
 @import url(main.css);
-
+/*Footer*/
+@import url(footer.css);
 
 
 
@@ -28,8 +29,7 @@ body {
     text-align: center;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    justify-content: center;
-
+    /*No usar "justify-content: center;" hace que aparezcan barras blancas a los costados (Centra los objetos pero no rellena)*/
 }
 
 .logo {
@@ -45,15 +45,4 @@ body {
 
 
 
-/* Pie de página */
-
-footer {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: aliceblue;
-    background-color: black;
-    font-size: 0.75em;
-    padding: 1em;
-}
 

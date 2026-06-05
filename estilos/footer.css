@@ -1,0 +1,10 @@
+/* Pie de página */
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    font-size: 0.75em;
+    padding: 1em;
+}
