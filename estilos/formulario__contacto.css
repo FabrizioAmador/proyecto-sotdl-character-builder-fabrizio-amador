@@ -8,3 +8,12 @@ form{
     align-items: center;
 }
 
+form input, textarea {
+    width: 70vw;
+    min-width: 10em;
+    background-color: black;
+}
+
+textarea{
+    min-height: 10em;
+} 
