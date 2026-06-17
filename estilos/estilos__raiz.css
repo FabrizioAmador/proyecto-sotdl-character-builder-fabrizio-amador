@@ -9,6 +9,8 @@
 @import url(main.css);
 /*Footer*/
 @import url(footer.css);
+/*Las cartas de los personajes. Donde los datos se presentarán.*/
+@import url(linajes__carta.css);
 
 
 
