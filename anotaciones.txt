@@ -1,0 +1,2 @@
+Toda URL tiene que tener la barra / (usada para eso) y NO la barra invertida \ (usada para dar carácter especial a lo que sigue. Ejemplo: \t para tabular).
+Para que el listado JSON se considere un array por javascript: encerrar TODO el archivo en corchetes []

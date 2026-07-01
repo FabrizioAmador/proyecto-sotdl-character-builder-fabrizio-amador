@@ -1,8 +1,9 @@
+[
 {
     "id": 0,
-    "imagen":"",
     "nombre":"humano",
-    "descripcion":"",
+    "imagen":"../imagenes/linajes/humano.jpg",
+    "descripcion":"La versatilidad de los humanos les permitió expandirse por todo Rûl creando desde sus humildes y primitivos comienzos, los Imperios más importantes de la historia.",
     "nivel0":{
     "atributos": {
         "fuerza":10,
@@ -15,11 +16,150 @@
         "defensa":"agilidad",
         "vidaMax":"fuerza",
         "regeneracion":"vidaMax/4",
-        "tamano":"1/2 o 1",
+        "tamano": 1,
         "velocidad":10,
         "poder":0,
         "insanidad":0,
         "corrupcion":0
+    },
+    "otros":{
+    }
+}
+},
+{
+    "id": 1,
+    "nombre":"cambiaforma",
+    "imagen":"../imagenes/linajes/cambiaforma.jpg",
+    "descripcion":"Estos misteriosos seres son producto de muchas historias en el folklore rural. Leyendas dicen que son creados por faes para esconder la ausencia de los niños que raptan.",
+    "nivel0":{
+    "atributos": {
+        "fuerza":9,
+        "agilidad":10,
+        "intelecto":10,
+        "voluntad":10
+    },
+    "caracteristicas":{
+        "percepcion":"intelecto + 1",
+        "defensa":"agilidad",
+        "vidaMax":"fuerza",
+        "regeneracion":"vidaMax/4",
+        "tamano":1,
+        "velocidad":10,
+        "poder":0,
+        "insanidad":0,
+        "corrupcion":0
+    },
+    "otros":{
+    }
+}
+},
+{
+    "id": 2,
+    "nombre":"autómata",
+    "imagen":"../imagenes/linajes/automata.jpg",
+    "descripcion":"Los autómatas son los obreros perfectos. No necesitan comer, tomar o respirar. Muchos questionan su estatus de ser vivientes a pesar del alma extraída para poseer estos armatostes.",
+    "nivel0":{
+    "atributos": {
+        "fuerza":9,
+        "agilidad":8,
+        "intelecto":9,
+        "voluntad":9
+    },
+    "caracteristicas":{
+        "percepcion":"intelecto",
+        "defensa":13,
+        "vidaMax":"fuerza",
+        "regeneracion":"vidaMax/4",
+        "tamano":1,
+        "velocidad":8,
+        "poder":0,
+        "insanidad":0,
+        "corrupcion":0
+    },
+    "otros":{
+    }
+}
+},
+{
+    "id": 3,
+    "nombre":"enano",
+    "imagen":"../imagenes/linajes/enano.jpg",
+    "descripcion":"Los enanos son desconfiados y hacen pocos amigos fuera de su linaje. Viviendo bajo las montañas, trabajan sus minas para cosechar los metales.",
+    "nivel0":{
+    "atributos": {
+        "fuerza":10,
+        "agilidad":9,
+        "intelecto":10,
+        "voluntad":10
+    },
+    "caracteristicas":{
+        "percepcion":"intelecto + 1",
+        "defensa":"agilidad",
+        "vidaMax":"fuerza + 4",
+        "regeneracion":"vidaMax/4",
+        "tamano":0.5,
+        "velocidad":8,
+        "poder":0,
+        "insanidad":0,
+        "corrupcion":0
+    },
+    "otros":{
+    }
+}
+},
+{
+    "id": 4,
+    "nombre":"goblin",
+    "imagen":"../imagenes/linajes/goblin.jpg",
+    "descripcion":"Después de que cayeran en desgracia, los goblin se infiltraron en sociedades humanas donde viven en alcantarillas,recolectando chucherías de entre la basura como si fuera tesoros.",
+    "nivel0":{
+    "atributos": {
+        "fuerza":8,
+        "agilidad":12,
+        "intelecto":10,
+        "voluntad":9
+    },
+    "caracteristicas":{
+        "percepcion":"intelecto + 1",
+        "defensa":"agilidad",
+        "vidaMax":"fuerza",
+        "regeneracion":"vidaMax/4",
+        "tamano":0.5,
+        "velocidad":10,
+        "poder":0,
+        "insanidad":0,
+        "corrupcion":0
+    },
+    "otros":{
+    }
+}
+},
+{
+    "id": 5,
+    "nombre":"orco",
+    "imagen":"../imagenes/linajes/orco.jpg",
+    "descripcion":"Creados por humanos para pelear sus guerras, estas montañas de carne, presumen una fuerza y resistencia que los hacen oponentes que nunca deben sobreestimarse.",
+    "nivel0":{
+    "atributos": {
+        "fuerza":11,
+        "agilidad":10,
+        "intelecto":9,
+        "voluntad":9
+    },
+    "caracteristicas":{
+        "percepcion":"intelecto + 1",
+        "defensa":"agilidad",
+        "vidaMax":"fuerza",
+        "regeneracion":"vidaMax/4",
+        "tamano":1,
+        "velocidad":12,
+        "poder":0,
+        "insanidad":0,
+        "corrupcion":1
+    },
+    "otros":{
     }
 }
 }
+
+]
