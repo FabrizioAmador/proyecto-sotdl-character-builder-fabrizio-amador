@@ -1,0 +1,25 @@
+{
+    "id": 0,
+    "imagen":"",
+    "nombre":"humano",
+    "descripcion":"",
+    "nivel0":{
+    "atributos": {
+        "fuerza":10,
+        "agilidad":10,
+        "intelecto":10,
+        "voluntad":10
+    },
+    "caracteristicas":{
+        "percepcion":"intelecto",
+        "defensa":"agilidad",
+        "vidaMax":"fuerza",
+        "regeneracion":"vidaMax/4",
+        "tamano":"1/2 o 1",
+        "velocidad":10,
+        "poder":0,
+        "insanidad":0,
+        "corrupcion":0
+    }
+}
+}

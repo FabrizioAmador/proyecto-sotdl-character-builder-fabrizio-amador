@@ -1,23 +1,27 @@
-/*Esta será el cript raíz pero de momento será donde esté todo*/
+/*Esta será el script raíz pero de momento será donde esté todo*/
 
 
-//Función para elegir personaje
-let eleccion = document.getElementById("elegirRaza");
-eleccion.addEventListener("click", function(){
+//Para crear las cartas
+//Conectar con el json de los linajes
+fetch("/baseDatos/linajes.json")
+//Chequear que existan (Más para usarse si es con una API)
+.then(response => {
+    if(!response.ok){
+        throw new Error("HTTP error! Status: ${response.status}")
+    } return response.json();
+}
+)
+.then(data=>{
+    const contenedor = document.getElementById("contenedor__linajes");
+    data.forEach(linaje => {
+        const cartaLinaje =
+        <div class="carta">
+            <img src="${linaje.imagen}" alt="linaje.nombre"></img>
+            <h3>${linaje.nombre}</h3>
+            <p>${linaje.descripcion}</p>
+        </div>;
+        contenedor.innerHTML += cartaLinaje;
+    })
 })
 
 
-
-//Pedir un stat
-function pedirStat (){
-    let statElegido = input("Eliga el stat a modificar: \n1. Fuerza\n2. Intelecto\n3. Agilidad\n4. Voluntad")
-}
-
-
-//Elegir stat a aumentar. (Modificación inicial de TODO personaje.)
-function modificarStatsBase(statAumentado, statRestado){
-        switch (statAumentado){
-        case "1":
-    }
-
-}
