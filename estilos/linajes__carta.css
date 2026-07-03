@@ -1,0 +1,21 @@
+/*Cartas de linaje*/
+
+.carta{
+    margin: 1em;
+    padding: 1em;
+}
+
+.carta:hover{
+    background-color:  rgba(5, 5, 5, 0.25);
+    cursor: pointer;
+}
+
+.carta img{
+    max-width: 200px;
+    margin-bottom: 1em;
+
+}
+
+.carta h3{
+    text-transform: capitalize;
+}
