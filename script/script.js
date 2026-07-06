@@ -1,30 +1,22 @@
 /*Esta será el script raíz pero de momento será donde esté todo*/
+//Primero el código y después el modulado, si no se me van las ganas
+//Guardar el contenedor en el HTML en una variable en javascript
+const contenedorHtml = document.getElementById("contenedor__linajes");
 
-//Fetchear el json de una (en el futuro)
-// document.addEventListener('DOMContentLoaded', function(){
-//     return let datosLinaje = fetch("../baseDatos/linajes.json");
-// })
-
-
-//=Para crear las cartas dinámicamente
+//Crear las cartas dinámicamente
 document.addEventListener('DOMContentLoaded', function(){
     //Usar la funcion que que haga el renderizado.
-    renderizarLinaje();
+    renderizarLinaje(contenedorHtml);
 });
 
-//Para mostrar atributos
-//Cuando se usa un selector de clase en JavaScript, devuelve un HTMLCollection y NO un Array. Hay que convertirlo.
-const listaCartas = document.getElementById("contenedor__linajes");
-listaCartas.addEventListener(function(event){
-    if(event.target. === "carta")
-});
-
-
+//Fetchear una sola vez
+function obtenerLinajes() {
+    return fetch("/baseDatos/linajes.json")
+}
 
 //Funcion de renderizado
-function renderizarLinaje(contenedor){
-//Conectar con el json de los linajes
-fetch("/baseDatos/linajes.json")
+function renderizarLinaje(contenedorRenderizado){
+obtenerLinajes()
 //Chequear que existan (Más para usarse si es con una API)
 .then(response => {
     if(!response.ok){
@@ -33,11 +25,10 @@ fetch("/baseDatos/linajes.json")
     } return response.json();
 }
 )
-.then(data=>{
-    //Guardar el que contenedor en el HTML en una variable en javascript
-    const contenedor = document.getElementById("contenedor__linajes");
+//Llamar el JSON aceptado DISTINTO al parámetro
+.then(datosLinaje=>{
     //Un bucle para trabajar con cada item del array en el json.
-    data.forEach(linaje => {
+    datosLinaje.forEach(linaje => {
         //Crear una constante con el HTML a insertar. ¡¡Acordarse de rodearlo con los contraacentos ` !!!!! Para que se tome como HTML y no texto literal.
         const cartaLinaje =`
         <div class="carta">
@@ -46,12 +37,48 @@ fetch("/baseDatos/linajes.json")
             <p>${linaje.descripcion}</p>
         </div>`;
         //"Sumar" el HTML de la constante del contenedor con la carta
-        contenedor.innerHTML += cartaLinaje;
+        contenedorRenderizado.innerHTML += cartaLinaje;
     }
     )
 }
 )
 }
 //Para chequear los atributos
-function mostrarAtributos(){
+function mostrarAtributos(contenedorRenderizado){
+obtenerLinajes()
+//Chequear que existan (Más para usarse si es con una API)
+.then(response => {
+    if(!response.ok){
+        throw new Error(`HTTP error! Status: ${response.status}`)
+    //Devolver el json
+    } return response.json();
+}
+)
+//Llamar el JSON aceptado DISTINTO al parámetro
+.then(datosLinaje=>{
+    //Un bucle para trabajar con cada item del array en el json.
+    datosLinaje.forEach(linaje => {
+        //Crear una constante con el HTML a insertar. ¡¡Acordarse de rodearlo con los contraacentos ` !!!!! Para que se tome como HTML y no texto literal.
+        const linajeAtributos =`
+        <div class="cartaLinajeCualidades">
+        <p>Los atributos influyen en tus características. Al crear un personaje, podés modificarlo aumentando un atributo a elección por 1 punto, a cambio de que otro atributo debe ser reducido por 1 punto. Este cambio solo se puede realizar una vez.</p>
+            <ul class="cartaLinajeCualidades">
+                <li>"Fuerza: "${linaje.atributos.fuerza}</li>
+                <li>"Agilidad: "${linaje.atributos.agilidad}</li>
+                <li>"Intelecto: "${linaje.atributos.intelecto}</li>
+                <li>"Voluntad: "${linaje.atributos.voluntad}</li>
+            </ul>
+            <ul class="linajeCaracterísticas">
+                <li>"Vida máxima: "${linaje.caracteristicas.vidaMax}</li>
+                <li>"Defensa: "${linaje.caracteristicas.defensa}</li>
+                <li>"Percepción: "${linaje.caracteristicas.percepcion}</li>
+                <li>"Insanidad Máxima: "${linaje.caracteristicas.insanidadMax}</li>
+            </ul>
+        </div>`;
+        //"Sumar" el HTML de la constante del contenedor con la carta
+        contenedorRenderizado.innerHTML += cartaLinaje;
+    }
+    )
+}
+)
 }

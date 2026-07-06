@@ -19,7 +19,7 @@
         "tamano": 1,
         "velocidad":10,
         "poder":0,
-        "insanidad":0,
+        "insanidadMax":0,
         "corrupcion":0
     },
     "otros":{
@@ -46,7 +46,7 @@
         "tamano":1,
         "velocidad":10,
         "poder":0,
-        "insanidad":0,
+        "insanidadMax":0,
         "corrupcion":0
     },
     "otros":{
@@ -73,7 +73,7 @@
         "tamano":1,
         "velocidad":8,
         "poder":0,
-        "insanidad":0,
+        "insanidadMax":0,
         "corrupcion":0
     },
     "otros":{
@@ -100,7 +100,7 @@
         "tamano":0.5,
         "velocidad":8,
         "poder":0,
-        "insanidad":0,
+        "insanidadMax":0,
         "corrupcion":0
     },
     "otros":{
@@ -127,7 +127,7 @@
         "tamano":0.5,
         "velocidad":10,
         "poder":0,
-        "insanidad":0,
+        "insanidadMax":0,
         "corrupcion":0
     },
     "otros":{
@@ -154,7 +154,7 @@
         "tamano":1,
         "velocidad":12,
         "poder":0,
-        "insanidad":0,
+        "insanidadMax":0,
         "corrupcion":1
     },
     "otros":{
