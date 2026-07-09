@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', function(){
     renderizarLinaje(contenedorHtml);
 });
 
+
+//Llamar a la función para renderizar al clickear
+contenedorHtml.addEventListener('click', function(event){
+    const cartaMostrando = event.target.closest(".cartaLinajeCualidades");
+    if (cartaMostrando){
+        mostrarAtributos(cartaMostrando);
+    }
+})
+
 //Fetchear una sola vez
 function obtenerLinajes() {
     return fetch("/baseDatos/linajes.json")
@@ -52,8 +61,7 @@ obtenerLinajes()
         throw new Error(`HTTP error! Status: ${response.status}`)
     //Devolver el json
     } return response.json();
-}
-)
+})
 //Llamar el JSON aceptado DISTINTO al parámetro
 .then(datosLinaje=>{
     //Un bucle para trabajar con cada item del array en el json.
@@ -61,7 +69,7 @@ obtenerLinajes()
         //Crear una constante con el HTML a insertar. ¡¡Acordarse de rodearlo con los contraacentos ` !!!!! Para que se tome como HTML y no texto literal.
         const linajeAtributos =`
         <div class="cartaLinajeCualidades">
-        <p>Los atributos influyen en tus características. Al crear un personaje, podés modificarlo aumentando un atributo a elección por 1 punto, a cambio de que otro atributo debe ser reducido por 1 punto. Este cambio solo se puede realizar una vez.</p>
+        <p>Los atributos influyen en tus características. Al crear un personaje, por única vez, podés modificarlo aumentando un atributo a elección por 1 punto, a cambio de que otro atributo debe ser reducido por 1 punto.</p>
             <ul class="cartaLinajeCualidades">
                 <li>"Fuerza: "${linaje.atributos.fuerza}</li>
                 <li>"Agilidad: "${linaje.atributos.agilidad}</li>
@@ -76,7 +84,7 @@ obtenerLinajes()
             </ul>
         </div>`;
         //"Sumar" el HTML de la constante del contenedor con la carta
-        contenedorRenderizado.innerHTML += cartaLinaje;
+        contenedorRenderizado.innerHTML += linajeAtributos;
     }
     )
 }
